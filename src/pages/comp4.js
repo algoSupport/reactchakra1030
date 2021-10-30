@@ -11,7 +11,7 @@ export default function Comp4() {
       <Navigation />
       <Welcome />
       <Heading mt={20}>Top 721Pay Collections</Heading>
-      <Grid templateColumns="repeat(5, 1fr)" gap={6} bgColor="teal.700" mt={5}>
+      <Grid templateColumns="repeat(5, 1fr)" gap={6} bgColor="teal.700" my={5}>
         <Center p={3}>RANK</Center>
         <Center>POOL</Center>
         <Center>POOL</Center>
