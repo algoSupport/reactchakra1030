@@ -17,6 +17,7 @@ import IntroRight from "../components/IntroRight";
 import BuyNow from "../components/BuyNow";
 import SocialLinks from "../components/SocialLinks";
 import Info from "../components/Info";
+import Footer from "../components/Footer";
 
 export default function Comp4() {
   return (
@@ -51,7 +52,7 @@ export default function Comp4() {
       <BuyNow />
       <SocialLinks />
       <Info />
-      <Box border="3px solid rgba(44, 122, 123, 0.53)" />
+      <Footer />
     </Container>
   );
 }
