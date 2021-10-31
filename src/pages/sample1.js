@@ -1,5 +1,5 @@
 import React from "react";
-import { NFT } from "../components/NFT";
+import NFT from "../components/NFT";
 
 const Sample1 = () => {
   return (
