@@ -17,6 +17,15 @@ const MyApp = () => {
         fonts: {
           heading: "Inter",
           body: "Inter"
+        },
+        styles: {
+          global: {
+            // styles for the `body`
+            body: {
+              bg:
+                "linear-gradient(186.28deg, rgba(21, 156, 162, 0.2) 4.96%, rgba(0, 0, 0, 0) 53.7%), #050B1C;"
+            }
+          }
         }
       })}
     >
