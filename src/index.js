@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Sample1 from "./pages/sample1";
 import Comp4 from "./pages/comp4";
 import Comp1 from "./pages/comp1";
+import Comp2 from "./pages/comp2";
 
 const MyApp = () => {
   return (
@@ -35,11 +36,14 @@ const MyApp = () => {
           <Route path="/sample1">
             <Sample1 />
           </Route>
-          <Route path="/comp4">
-            <Comp4 />
-          </Route>
           <Route path="/comp1">
             <Comp1 />
+          </Route>
+          <Route path="/comp2">
+            <Comp2 />
+          </Route>
+          <Route path="/comp4">
+            <Comp4 />
           </Route>
         </Switch>
       </Router>
