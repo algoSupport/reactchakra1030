@@ -1,26 +1,28 @@
 import React from "react";
 import { Button, Flex } from "@chakra-ui/react";
 
-export default function Frame({ children }) {
+export default function Frame(props) {
   return (
     <Flex
       flexDirection="column"
-      borderRadium="lg"
+      borderRadius="2xl"
       position="relative"
-      maxW="200px"
+      w="640px"
       bgColor="#4A5568"
-      borderRadius="lg"
+      {...props}
     >
       <Button
         colorScheme="gray"
         size="sm"
+        bgColor="white"
+        color="black"
         position="absolute"
         top="10px"
         right="10px"
       >
         X
       </Button>
-      {children}
+      {props.children}
     </Flex>
   );
 }
