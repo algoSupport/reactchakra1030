@@ -27,7 +27,6 @@ export default function Swap() {
         direction="down"
       />
       <Button
-        colorScheme="teal"
         w="100%"
         bgColor="teal.500"
         fontSize="48px"
