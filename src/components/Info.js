@@ -27,13 +27,13 @@ export default function Info() {
 function ItemInfo({ caption, content, description }) {
   return (
     <Box borderWidth="1px" borderColor="#171923" borderRadius="12px" p="24px">
-      <Text fontSize="14px" fontWeight="500">
+      <Text fontSize="md" fontWeight="500">
         {caption}
       </Text>
-      <Text fontSize="48px" fontWeight="700">
+      <Text fontSize="3xl" fontWeight="700">
         {content}
       </Text>
-      <Text fontSize="24px" fontWeight="600" color="rgba(141, 141, 141, 1)">
+      <Text fontSize="lg" fontWeight="600" color="rgba(141, 141, 141, 1)">
         {description}
       </Text>
     </Box>

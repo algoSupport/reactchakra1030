@@ -28,6 +28,8 @@ export default function NFT({
       borderRadius="3xl"
       backgroundColor={colorMode === "light" ? "gray.200" : "gray.700"}
       p="5"
+      minW="400px"
+      overflow="auto"
     >
       <Text fontSize="2xl">
         {name}({ticker})

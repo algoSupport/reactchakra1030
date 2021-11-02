@@ -9,15 +9,15 @@ import medium from "../assets/medium.png";
 export default function SocaialLinks() {
   return (
     <Flex alignItems="center" flexDirection="column" my="80px">
-      <Text fontSize="48px" fontWeight="700">
+      <Text fontSize="5xl" fontWeight="700">
         Join The Community
       </Text>
       <Flex gridGap={2} mt="40px">
-        <Image src={telegram} boxSize="100px" />
-        <Image src={twitter} boxSize="100px" />
-        <Image src={discord} boxSize="100px" />
-        <Image src={facebook} boxSize="100px" />
-        <Image src={medium} boxSize="100px" />
+        <Image src={telegram} boxSize="70px" />
+        <Image src={twitter} boxSize="70px" />
+        <Image src={discord} boxSize="70px" />
+        <Image src={facebook} boxSize="70px" />
+        <Image src={medium} boxSize="70px" />
       </Flex>
     </Flex>
   );

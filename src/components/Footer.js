@@ -19,64 +19,64 @@ export default function Footer() {
     >
       <Grid w="80%" templateColumns="repeat(4, 2fr)">
         <Flex flexDirection="column">
-          <Text fontSize="24px" fontWeight="600" color="rgba(141, 141, 141, 1)">
+          <Text fontSize="lg" fontWeight="600" color="rgba(141, 141, 141, 1)">
             My Account
           </Text>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Dashboard
           </Link>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Wallet
           </Link>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             My Account
           </Link>
         </Flex>
 
         <Flex flexDirection="column">
-          <Text fontSize="24px" fontWeight="600" color="rgba(141, 141, 141, 1)">
+          <Text fontSize="lg" fontWeight="600" color="rgba(141, 141, 141, 1)">
             PRODUCTS
           </Text>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Collectibles
           </Link>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Personal
           </Link>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Business
           </Link>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Drops
           </Link>
         </Flex>
 
         <Flex flexDirection="column">
-          <Text fontSize="24px" fontWeight="600" color="rgba(141, 141, 141, 1)">
+          <Text fontSize="lg" fontWeight="600" color="rgba(141, 141, 141, 1)">
             CONNECT
           </Text>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Join Us
           </Link>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Partners
           </Link>
         </Flex>
 
         <Flex flexDirection="column">
-          <Text fontSize="24px" fontWeight="600" color="rgba(141, 141, 141, 1)">
+          <Text fontSize="lg" fontWeight="600" color="rgba(141, 141, 141, 1)">
             DOCS
           </Text>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Github
           </Link>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Telegram
           </Link>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Medium
           </Link>
-          <Link fontSize="20px" fontWeight="600">
+          <Link fontSize="md" fontWeight="600">
             Learning Center
           </Link>
         </Flex>

@@ -13,15 +13,15 @@ import FancyButton from "./FancyButton";
 
 export default function IntroRight() {
   return (
-    <Grid templateColumns="repeat(5, 1fr)" mt={100}>
+    <Grid templateColumns="repeat(5, 1fr)" mt={100} alignItems="center">
       <GridItem colSpan={3} mr={10}>
         <Flex>
           <FancyButton text="Coming Soon" />
         </Flex>
-        <Text fontSize="36px" fontWeight="700" mb={10}>
+        <Text fontSize="2xl" fontWeight="700" mb={10}>
           Earn Yield for Payments by computer, tablet, & smartphone
         </Text>
-        <Text fontSize="20px" fontWeight="700" align="center">
+        <Text fontSize="lg" fontWeight="700" align="center">
           You can now accept a payment from any country on Earth, with no risk
           of fraud. / Expand your business globally and reach new customers./
           Bank Direct Deposits You will receive a direct deposit into your bank
@@ -36,13 +36,13 @@ export default function IntroRight() {
       </GridItem>
 
       <GridItem colSpan={2}>
-        <Box
+        <Flex
           bgGradient="linear(to-b, teal.700 0%, transparent 70%)"
           borderRadius="full"
           mr={10}
         >
-          <Image fit="cover" src={intro} p={20}></Image>
-        </Box>
+          <Image fit="cover" src={intro} p={5}></Image>
+        </Flex>
       </GridItem>
     </Grid>
   );
