@@ -4,9 +4,10 @@ import { render } from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Sample1 from "./pages/sample1";
-import Comp4 from "./pages/comp4";
 import Comp1 from "./pages/comp1";
 import Comp2 from "./pages/comp2";
+import Comp3 from "./pages/comp3";
+import Comp4 from "./pages/comp4";
 
 const MyApp = () => {
   return (
@@ -41,6 +42,9 @@ const MyApp = () => {
           </Route>
           <Route path="/comp2">
             <Comp2 />
+          </Route>
+          <Route path="/comp3">
+            <Comp3 />
           </Route>
           <Route path="/comp4">
             <Comp4 />
