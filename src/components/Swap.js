@@ -7,7 +7,7 @@ import { Button, Flex, Image } from "@chakra-ui/react";
 
 export default function Swap() {
   return (
-    <Frame pt="100px">
+    <Frame pt="70px">
       <SwapItem
         title="FROM"
         amount="0"
@@ -16,8 +16,8 @@ export default function Swap() {
         direction="down"
       />
       <Flex mx="auto" my={5}>
-        <Image src={up} height="70px" />
-        <Image src={down} height="70px" />
+        <Image src={up} height="50px" />
+        <Image src={down} height="50px" />
       </Flex>
       <SwapItem
         title="To"
@@ -29,12 +29,12 @@ export default function Swap() {
       <Button
         w="100%"
         bgColor="teal.500"
-        fontSize="48px"
+        fontSize="2xl"
         fontWeight="700"
         color="white"
         borderRadius="2xl"
         mt="50px"
-        py="65px"
+        py="45px"
       >
         SWAP
       </Button>

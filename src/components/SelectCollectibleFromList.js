@@ -6,9 +6,7 @@ import Frame from "./Frame";
 export default function SelectCollectibleFromList() {
   return (
     <Frame p="50px">
-      <Text fontSize="36px" fontWeight="600">
-        SELECT COLLECTIBLE
-      </Text>
+      <Text>SELECT COLLECTIBLE</Text>
       <Input my={5} placeholder="Search Projects" borderRadius="xl" />
       <Flex flexDirection="column" overflow="auto" height="500px">
         <Collectible

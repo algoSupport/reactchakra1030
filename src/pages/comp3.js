@@ -7,7 +7,7 @@ import coinbase_circle from "../assets/coinbase_circle.png";
 import portis from "../assets/portis.png";
 import walletconnect from "../assets/walletconnect.png";
 
-export default function Comp1() {
+export default function Comp3() {
   return (
     <>
       <Connect type="Coinbase"></Connect>

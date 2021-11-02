@@ -7,7 +7,6 @@ export default function Frame(props) {
       flexDirection="column"
       borderRadius="2xl"
       position="relative"
-      w="640px"
       bgColor="#4A5568"
       {...props}
     >

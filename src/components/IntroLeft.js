@@ -20,45 +20,46 @@ import FancyButton from "./FancyButton";
 
 export default function IntroLeft() {
   return (
-    <Grid templateColumns="repeat(5, 1fr)" mt={10}>
+    <Grid templateColumns="repeat(5, 1fr)" mt={10} alignItems="center">
       <GridItem colSpan={2}>
-        <Box
+        <Flex
           bgGradient="linear(to-b, teal.700 0%, transparent 70%)"
           borderRadius="full"
           mr={10}
+          alignItems="center"
         >
-          <Image fit="cover" src={intro} p={20}></Image>
-        </Box>
+          <Image fit="cover" src={intro} p={5}></Image>
+        </Flex>
       </GridItem>
       <GridItem colSpan={3} ml={10}>
         <Flex>
           <Spacer />
           <FancyButton text="Coming Soon" />
         </Flex>
-        <Text fontSize="36px" fontWeight="700" mb={10}>
+        <Text fontSize="2xl" fontWeight="700" mb={10}>
           NFT payment plugins for popular eCommerce platforms
         </Text>
-        <Text fontSize="20px" fontWeight="700" align="center">
+        <Text fontSize="lg" fontWeight="700" align="center">
           A community-owned protocol for NFT payments on Ethereum
         </Text>
-        <Text fontSize="20px" fontWeight="700" align="center">
+        <Text fontSize="lg" fontWeight="700" align="center">
           We’re rolling out a new version of our app. Coming Soon!
         </Text>
-        <Text fontSize="20px" fontWeight="700" align="center">
+        <Text fontSize="lg" fontWeight="700" align="center">
           You will receive a direct deposit into your bank account every
           business day.
         </Text>
-        <Text fontSize="20px" fontWeight="700" align="center">
+        <Text fontSize="lg" fontWeight="700" align="center">
           BitPay guarantees the exhange rate and manages the currency exchange
           when required.
         </Text>
         <Flex alignItems="center">
-          <Image src={img1} p={1} />
-          <Image src={img2} p={1} />
-          <Image src={img3} p={1} />
-          <Image src={img4} p={1} />
-          <Image src={img5} p={1} />
-          <Image src={img6} p={1} />
+          <Image src={img1} p={1} boxSize="48px" />
+          <Image src={img2} p={1} boxSize="48px" />
+          <Image src={img3} p={1} boxSize="48px" />
+          <Image src={img4} p={1} boxSize="48px" />
+          <Image src={img5} p={1} boxSize="48px" />
+          <Image src={img6} p={1} boxSize="48px" />
           <FancyButton text="Go To App" my="auto" />
         </Flex>
       </GridItem>

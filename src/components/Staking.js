@@ -7,19 +7,21 @@ export default function Staking() {
   return (
     <Flex
       bgColor="white"
-      height="750px"
-      width="720px"
+      height="600px"
+      width="lg"
       position="relative"
       color="black"
       alignItems="center"
       flexDirection="column"
       pt={10}
       m="auto"
+      fontSize="2xl"
+      fontWeight="700"
     >
       <Button
         colorScheme="teal"
         position="absolute"
-        boxSize="80px"
+        size="lg"
         right="0px"
         top="0px"
         borderRadius="none"
@@ -29,79 +31,55 @@ export default function Staking() {
           setStaking(0);
         }}
       >
-        <FaRedo size="50px" />
+        <FaRedo size="30px" />
       </Button>
-      <Text fontSize="36px" fontWeight="700" mb={10}>
+      <Text mb={10}>
         {staking <= 1 && "Pre-Staking Program"}
         {staking > 1 && "Stake NFTGX"}
       </Text>
       {staking <= 1 && (
         <Flex w="70%" justifyContent="space-between">
           <Flex flexDirection="column" alignItems="center">
-            <Text fontSize="20px" fontWeight="700" color="blackAlpha.700">
+            <Text fontSize="md" color="blackAlpha.700">
               EST PAY
             </Text>
-            <Text fontSize="48px" fontWeight="600" color="teal.500">
-              ~0.00~
-            </Text>
+            <Text color="teal.500">~0.00~</Text>
           </Flex>
 
           <Flex flexDirection="column" alignItems="center">
-            <Text fontSize="20px" fontWeight="700" color="blackAlpha.700">
+            <Text fontSize="md" color="blackAlpha.700">
               EST Reward / Block
             </Text>
-            <Text fontSize="48px" fontWeight="600" color="teal.500">
-              ~0.00~
-            </Text>
+            <Text color="teal.500">~0.00~</Text>
           </Flex>
         </Flex>
       )}
       <Box w="100%" border="1px solid black" my={4}></Box>
       {staking <= 1 && (
         <Flex
-          my={10}
+          my={5}
           w="70%"
           justifyContent="space-between"
           color="blackAlpha.700"
         >
           <Flex flexDirection="column" gridGap={5}>
-            <Text fontSize="30px" fontWeight="700">
-              Staked
-            </Text>
-            <Text fontSize="30px" fontWeight="700">
-              Available
-            </Text>
-            <Text fontSize="30px" fontWeight="700">
-              Pending Rewards
-            </Text>
-            <Text fontSize="30px" fontWeight="700">
-              Total
-            </Text>
+            <Text>Staked</Text>
+            <Text>Available</Text>
+            <Text>Pending Rewards</Text>
+            <Text>Total</Text>
           </Flex>
           <Flex flexDirection="column" gridGap={5}>
-            <Text fontSize="30px" fontWeight="700">
-              0.00 NFTG
-            </Text>
-            <Text fontSize="30px" fontWeight="700">
-              0.00 NFTG
-            </Text>
-            <Text fontSize="30px" fontWeight="700">
-              0.00 NFTG
-            </Text>
-            <Text fontSize="30px" fontWeight="700">
-              0.00 NFTG
-            </Text>
+            <Text>0.00 NFTG</Text>
+            <Text>0.00 NFTG</Text>
+            <Text>0.00 NFTG</Text>
+            <Text>0.00 NFTG</Text>
           </Flex>
         </Flex>
       )}
       {staking > 1 && (
-        <Flex flexDirection="column" alignItems="center" my={10} gridGap={5}>
-          <Text color="blackAlpha.700" fontSize="30px" fontWeight="700">
-            Available: 0.00 NFTGX
-          </Text>
-          <Text color="blackAlpha.700" fontSize="64px" fontWeight="600">
-            ~0~
-          </Text>
+        <Flex flexDirection="column" alignItems="center" my={5} gridGap={5}>
+          <Text color="blackAlpha.700">Available: 0.00 NFTGX</Text>
+          <Text color="blackAlpha.700">~0~</Text>
           <Button
             colorScheme="teal"
             variant="outline"
@@ -117,13 +95,13 @@ export default function Staking() {
       <Flex w="100%">
         {staking === 0 && (
           <Button
-            colorScheme="teal"
             w="100%"
+            colorScheme="teal"
             borderRadius="none"
             color="white"
-            fontSize="36px"
+            fontSize="2xl"
             fontWeight="600"
-            py="50px"
+            py="40px"
             bgColor="rgba(44, 122, 123, 1)"
             onClick={() => {
               setStaking(1);
@@ -139,9 +117,9 @@ export default function Staking() {
               w="50%"
               borderRadius="none"
               color="white"
-              fontSize="36px"
+              fontSize="2xl"
               fontWeight="600"
-              py="50px"
+              py="40px"
               bgColor="#111827"
               onClick={() => {
                 setStaking(3);
@@ -154,9 +132,9 @@ export default function Staking() {
               w="50%"
               borderRadius="none"
               color="white"
-              fontSize="36px"
+              fontSize="2xl"
               fontWeight="600"
-              py="50px"
+              py="40px"
               bgColor="rgba(44, 122, 123, 1)"
               onClick={() => {
                 setStaking(2);
@@ -172,9 +150,9 @@ export default function Staking() {
             w="100%"
             borderRadius="none"
             color="white"
-            fontSize="36px"
+            fontSize="2xl"
             fontWeight="600"
-            py="50px"
+            py="40px"
             bgColor="rgba(44, 122, 123, 1)"
           >
             Stake 0 NFTG
@@ -186,9 +164,9 @@ export default function Staking() {
             w="100%"
             borderRadius="none"
             color="white"
-            fontSize="36px"
+            fontSize="2xl"
             fontWeight="600"
-            py="50px"
+            py="40px"
             bgColor="#111827"
           >
             Unstake 0 NFTG

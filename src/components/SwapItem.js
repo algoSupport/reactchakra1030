@@ -18,19 +18,17 @@ export default function SwapItem({
       mx="47px"
       p="20px"
     >
-      <Text fontSize="36px" fontWeight="600">
-        {title}
-      </Text>
+      <Text>{title}</Text>
       <Flex alignItems="center" mt="10px" w="80%" mx="auto">
-        <Text w="40%" fontSize="24px">
+        <Text w="40%" fontSize="lg">
           {amount}
         </Text>
         <Image w="10%" src={avatarUrl} mx={3} boxSize="" />
-        <Text w="30%" fontSize="24px" mr={5}>
+        <Text w="30%" fontSize="lg" mr={5}>
           {caption}
         </Text>
-        {direction === "up" && <Image src={up} height="70px" />}
-        {direction === "down" && <Image src={down} height="70px" />}
+        {direction === "up" && <Image src={up} height="50px" />}
+        {direction === "down" && <Image src={down} height="50px" />}
       </Flex>
     </Flex>
   );
