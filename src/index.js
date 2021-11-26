@@ -34,9 +34,6 @@ const MyApp = () => {
     >
       <Router>
         <Switch>
-          <Route path="/sample1">
-            <Sample1 />
-          </Route>
           <Route path="/comp1">
             <Comp1 />
           </Route>
@@ -47,6 +44,9 @@ const MyApp = () => {
             <Comp3 />
           </Route>
           <Route path="/comp4">
+            <Comp4 />
+          </Route>
+          <Route path="/">
             <Comp4 />
           </Route>
         </Switch>
